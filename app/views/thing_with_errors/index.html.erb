@@ -1,0 +1,23 @@
+<h1>Listing thing_with_errors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @thing_with_errors.each do |thing_with_error| %>
+  <tr>
+    <td><%= thing_with_error.name %></td>
+    <td><%= link_to 'Show', thing_with_error %></td>
+    <td><%= link_to 'Edit', edit_thing_with_error_path(thing_with_error) %></td>
+    <td><%= link_to 'Destroy', thing_with_error, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Thing with error', new_thing_with_error_path %>
