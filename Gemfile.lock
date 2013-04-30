@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/dockyard/party_foul.git
+  revision: a78fadf073d9a08d1a428abf1c88d05f9135debb
+  branch: master
+  specs:
+    party_foul (1.2.2)
+      github_api (~> 0.9)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -47,13 +55,13 @@ GEM
     facter (1.6.18)
     faraday (0.8.7)
       multipart-post (~> 1.1)
-    github_api (0.8.11)
+    github_api (0.9.7)
       faraday (~> 0.8.1)
-      hashie (~> 1.2.0)
+      hashie (>= 1.2)
       multi_json (~> 1.4)
       nokogiri (~> 1.5.2)
       oauth2
-    hashie (1.2.0)
+    hashie (2.0.4)
     hike (1.2.2)
     httpauth (0.2.0)
     i18n (0.6.1)
@@ -80,8 +88,6 @@ GEM
       multi_json (~> 1.0)
       multi_xml (~> 0.5)
       rack (~> 1.2)
-    party_foul (1.2.1)
-      github_api (~> 0.8.8)
     polyglot (0.3.3)
     rack (1.4.5)
     rack-cache (1.2)
@@ -145,7 +151,7 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   jquery-rails
-  party_foul
+  party_foul!
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   sidekiq

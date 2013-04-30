@@ -7,7 +7,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3'
 
-gem 'party_foul'
+gem 'party_foul', git: "git://github.com/dockyard/party_foul.git", branch: "master"
 
 gem 'sidekiq'
 
